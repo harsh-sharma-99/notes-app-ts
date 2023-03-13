@@ -1,11 +1,12 @@
-import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
+import NewNote from './components/newNote';
+import './app-styles.scss';
 
 function App() {
   return (
-    <div>
+    <div className = "main-container">
      <Routes>
-       <Route path = "/" element = {<h1>Home Page</h1>} /> 
+       <Route path = "/" element = {<NewNote/>} /> 
        <Route path = "/new" element = {<h1>New Page</h1>} /> 
        <Route path = "/:id" >
         <Route index element = {<h1>Show</h1>} /> 
