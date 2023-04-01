@@ -1,14 +1,10 @@
-import React from 'react'
-import "./styles.scss"
-import CreatableSelect from 'react-select/creatable';
+import React from 'react';
+import './styles.scss';
 
 const NoteForm = () => {
-    let root = "form"
-  return (
-    <div className = {`${root}_container`}>
+  const root = 'form';
 
-    </div>
-  )
-}
+  return <div className={`${root}_container`}>Form Container</div>;
+};
 
-export default NoteForm 
+export default NoteForm;
